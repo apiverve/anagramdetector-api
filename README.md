@@ -11,7 +11,6 @@
 [![npm](https://img.shields.io/badge/npm-CB3837?style=flat&logo=npm&logoColor=white)](https://www.npmjs.com/package/@apiverve/anagramdetector)
 [![NuGet](https://img.shields.io/badge/NuGet-004880?style=flat&logo=nuget&logoColor=white)](https://www.nuget.org/packages/APIVerve.API.AnagramDetector)
 [![PyPI](https://img.shields.io/badge/PyPI-3776AB?style=flat&logo=python&logoColor=white)](https://pypi.org/project/apiverve-anagramdetector/)
-[![CocoaPods](https://img.shields.io/badge/CocoaPods-EE3322?style=flat&logo=cocoapods&logoColor=white)](#-cocoapods-iosmacos)
 [![JitPack](https://img.shields.io/badge/JitPack-2E7D32?style=flat&logo=android&logoColor=white)](#-android-jitpack)
 
 ---
@@ -23,14 +22,14 @@
 ```javascript
 async function callAnagramDetectorAPI() {
     try {
-        const params &#x3D; new URLSearchParams({
-            text1: &#x27;listen&#x27;,
-            text2: &#x27;silent&#x27;,
+        const params = new URLSearchParams({
+            text1: 'listen',
+            text2: 'silent',
             ignorecase: true,
             ignorespaces: true
         });
 
-        const response = await fetch(&#x60;https://api.apiverve.com/v1/anagramdetector?${params}&#x60;, {
+        const response = await fetch(`https://api.apiverve.com/v1/anagramdetector?${params}`, {
             method: 'GET',
             headers: {
                 'x-api-key': 'YOUR_API_KEY_HERE'
@@ -94,16 +93,6 @@ pip install apiverve-anagramdetector
 
 ---
 
-### 🍎 CocoaPods (iOS/macOS)
-
-```ruby
-pod 'APIVerveAnagramDetector', '~> 1.0'
-```
-
-[**Package Code →**](./cocoapods/)
-
----
-
 ### 🤖 Android (JitPack)
 
 ```gradle
@@ -116,7 +105,7 @@ implementation 'com.github.apiverve:anagramdetector-api:1.0.0'
 
 ## Features
 
-✅ **Multi-platform support** - Use the same API across Node.js, .NET, Python, iOS/macOS, Android, and browsers
+✅ **Multi-platform support** - Use the same API across Node.js, .NET, Python, Android, and browsers
 ✅ **Simple authentication** - Just add your API key in the request header
 ✅ **Comprehensive documentation** - Full examples and API reference available
 ✅ **Production-ready** - Used by developers worldwide
