@@ -44,7 +44,12 @@ from apiverve_anagramdetector.apiClient import AnagramdetectorAPIClient
 # Initialize the client with your APIVerve API key
 api = AnagramdetectorAPIClient("[YOUR_API_KEY]")
 
-query = { "text1": "listen", "text2": "silent", "ignorecase": true, "ignorespaces": true }
+query = {
+    "text1": "listen",
+    "text2": "silent",
+    "ignorecase": true,
+    "ignorespaces": true
+}
 
 try:
     # Make the API call
@@ -82,7 +87,12 @@ Using the API client, you can perform requests to the API.
 ###### Define Query
 
 ```python
-query = { "text1": "listen", "text2": "silent", "ignorecase": true, "ignorespaces": true }
+query = {
+    "text1": "listen",
+    "text2": "silent",
+    "ignorecase": true,
+    "ignorespaces": true
+}
 ```
 
 ###### Simple Request
@@ -159,7 +169,12 @@ from apiverve_anagramdetector.apiClient import AnagramdetectorAPIClient, Anagram
 
 api = AnagramdetectorAPIClient("[YOUR_API_KEY]")
 
-query = { "text1": "listen", "text2": "silent", "ignorecase": true, "ignorespaces": true }
+query = {
+    "text1": "listen",
+    "text2": "silent",
+    "ignorecase": true,
+    "ignorespaces": true
+}
 
 try:
     result = api.execute(query)
@@ -180,7 +195,12 @@ from apiverve_anagramdetector.apiClient import AnagramdetectorAPIClient, Anagram
 
 api = AnagramdetectorAPIClient("[YOUR_API_KEY]")
 
-query = { "text1": "listen", "text2": "silent", "ignorecase": true, "ignorespaces": true }
+query = {
+    "text1": "listen",
+    "text2": "silent",
+    "ignorecase": true,
+    "ignorespaces": true
+}
 
 try:
     result = api.execute(query)
@@ -214,7 +234,12 @@ The client supports the context manager protocol for automatic resource cleanup:
 ```python
 from apiverve_anagramdetector.apiClient import AnagramdetectorAPIClient, AnagramdetectorAPIClientError
 
-query = { "text1": "listen", "text2": "silent", "ignorecase": true, "ignorespaces": true }
+query = {
+    "text1": "listen",
+    "text2": "silent",
+    "ignorecase": true,
+    "ignorespaces": true
+}
 
 # Using context manager ensures proper cleanup
 with AnagramdetectorAPIClient("[YOUR_API_KEY]") as api:
@@ -240,7 +265,12 @@ from apiverve_anagramdetector.apiClient import AnagramdetectorAPIClient
 # Enable debug mode
 api = AnagramdetectorAPIClient("[YOUR_API_KEY]", debug=True)
 
-query = { "text1": "listen", "text2": "silent", "ignorecase": true, "ignorespaces": true }
+query = {
+    "text1": "listen",
+    "text2": "silent",
+    "ignorecase": true,
+    "ignorespaces": true
+}
 
 # Debug information will be printed to console
 result = api.execute(query)
@@ -255,8 +285,14 @@ from apiverve_anagramdetector.apiClient import AnagramdetectorAPIClient
 
 api = AnagramdetectorAPIClient("[YOUR_API_KEY]")
 
+query = {
+    "text1": "listen",
+    "text2": "silent",
+    "ignorecase": true,
+    "ignorespaces": true
+}
+
 try:
-    query = { "text1": "listen", "text2": "silent", "ignorecase": true, "ignorespaces": true }
     result = api.execute(query)
     print(result)
 finally:
