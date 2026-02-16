@@ -1,6 +1,6 @@
 name: apiverve_anagramdetector
 description: Anagram Detector is a tool for checking if two words or phrases are anagrams of each other. It provides character frequency analysis and similarity scoring.
-version: 1.1.13
+version: 1.1.14
 homepage: https://apiverve.com/marketplace/anagramdetector?utm_source=dart&utm_medium=homepage
 repository: https://github.com/apiverve/anagramdetector-api/tree/main/dart
 
