@@ -17,11 +17,14 @@ def call_anagramdetector_api():
     Make a GET request to the Anagram Detector API
     """
     try:
+        # Query parameters
+        params &#x3D; {&#x27;text1&#x27;: &#x27;listen&#x27;, &#x27;text2&#x27;: &#x27;silent&#x27;, &#x27;ignorecase&#x27;: true, &#x27;ignorespaces&#x27;: true}
+
         headers = {
             'x-api-key': API_KEY
         }
 
-        response = requests.get(API_URL, headers=headers)
+        response = requests.get(API_URL, headers=headers, params=params)
 
         # Raise exception for HTTP errors
         response.raise_for_status()
