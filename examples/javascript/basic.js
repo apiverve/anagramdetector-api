@@ -13,7 +13,15 @@ const API_URL = 'https://api.apiverve.com/v1/anagramdetector';
  */
 async function callAnagramDetectorAPI() {
   try {
-    const response = await fetch(API_URL, {
+    // Query parameters
+    const params &#x3D; new URLSearchParams({
+            text1: &#x27;listen&#x27;,
+            text2: &#x27;silent&#x27;,
+            ignorecase: true,
+            ignorespaces: true
+        });
+
+    const response = await fetch(`${API_URL}?${params}`, {
       method: 'GET',
       headers: {
         'x-api-key': API_KEY
