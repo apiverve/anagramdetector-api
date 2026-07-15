@@ -4,48 +4,37 @@ declare module '@apiverve/anagramdetector' {
     secure?: boolean;
   }
 
+  /**
+   * Describes fields the current plan does not unlock. Locked fields arrive as null
+   * in `data`; `locked_fields` names them, using dot paths for nested fields.
+   * Absent when the plan unlocks everything.
+   */
+  export interface PremiumInfo {
+    message: string;
+    upgrade_url: string;
+    locked_fields: string[];
+  }
+
   export interface anagramdetectorResponse {
     status: string;
     error: string | null;
     data: AnagramDetectorData;
     code?: number;
+    premium?: PremiumInfo;
   }
 
 
   interface AnagramDetectorData {
-      text1:                   string;
-      text2:                   string;
-      isAnagram:               boolean;
-      cleanedText1:            string;
-      cleanedText2:            string;
-      sortedText1:             string;
-      sortedText2:             string;
-      lengthText1:             number;
-      lengthText2:             number;
-      characterFrequencyText1: CharacterFrequencyText1;
-      characterFrequencyText2: CharacterFrequencyText1;
-      commonCharacters:        CharacterFrequencyText1;
-      uniqueToText1:           UniqueToText;
-      uniqueToText2:           UniqueToText;
-      similarityPercentage:    number;
-      options:                 Options;
-  }
-  
-  interface CharacterFrequencyText1 {
-      l: number;
-      i: number;
-      s: number;
-      t: number;
-      e: number;
-      n: number;
-  }
-  
-  interface Options {
-      ignoreCase:   boolean;
-      ignoreSpaces: boolean;
-  }
-  
-  interface UniqueToText {
+      text1:                null | string;
+      text2:                null | string;
+      isAnagram:            boolean | null;
+      cleanedText1:         null | string;
+      cleanedText2:         null | string;
+      sortedText1:          null | string;
+      sortedText2:          null | string;
+      lengthText1:          number | null;
+      lengthText2:          number | null;
+      similarityPercentage: number | null;
   }
 
   export default class anagramdetectorWrapper {
