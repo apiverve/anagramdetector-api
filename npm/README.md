@@ -140,37 +140,7 @@ async function makeRequest() {
     "sorted_text2": "eilnst",
     "length_text1": 6,
     "length_text2": 6,
-    "character_frequency_text1": {
-      "l": 1,
-      "i": 1,
-      "s": 1,
-      "t": 1,
-      "e": 1,
-      "n": 1
-    },
-    "character_frequency_text2": {
-      "s": 1,
-      "i": 1,
-      "l": 1,
-      "e": 1,
-      "n": 1,
-      "t": 1
-    },
-    "common_characters": {
-      "l": 1,
-      "i": 1,
-      "s": 1,
-      "t": 1,
-      "e": 1,
-      "n": 1
-    },
-    "unique_to_text1": {},
-    "unique_to_text2": {},
-    "similarity_percentage": 100,
-    "options": {
-      "ignore_case": true,
-      "ignore_spaces": true
-    }
+    "similarity_percentage": 100
   }
 }
 ```
