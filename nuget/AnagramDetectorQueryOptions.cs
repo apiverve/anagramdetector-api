@@ -26,12 +26,12 @@ namespace APIVerve.API.AnagramDetector
         /// Ignore case when comparing (default: true)
         /// </summary>
         [JsonProperty("ignorecase")]
-        public string Ignorecase { get; set; }
+        public bool? Ignorecase { get; set; }
 
         /// <summary>
         /// Ignore spaces when comparing (default: true)
         /// </summary>
         [JsonProperty("ignorespaces")]
-        public string Ignorespaces { get; set; }
+        public bool? Ignorespaces { get; set; }
     }
 }
