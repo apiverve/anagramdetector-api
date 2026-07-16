@@ -51,7 +51,7 @@ Here's a simple example to get you started quickly:
 
 ```csharp
 using System;
-using APIVerve;
+using APIVerve.API.AnagramDetector;
 
 class Program
 {
@@ -60,11 +60,11 @@ class Program
         // Initialize the API client
         var apiClient = new AnagramDetectorAPIClient("[YOUR_API_KEY]");
 
-        var queryOptions = new QueryOptions {
-    text1 = "listen",
-    text2 = "silent",
-    ignorecase = true,
-    ignorespaces = true
+        var queryOptions = new AnagramDetectorQueryOptions {
+    Text1 = "listen",
+    Text2 = "silent",
+    Ignorecase = true,
+    Ignorespaces = true
 };
 
         // Make the API call
@@ -119,7 +119,7 @@ The modern async/await pattern provides the best performance and code readabilit
 ```csharp
 using System;
 using System.Threading.Tasks;
-using APIVerve;
+using APIVerve.API.AnagramDetector;
 
 public class Example
 {
@@ -127,11 +127,11 @@ public class Example
     {
         var apiClient = new AnagramDetectorAPIClient("[YOUR_API_KEY]");
 
-        var queryOptions = new QueryOptions {
-    text1 = "listen",
-    text2 = "silent",
-    ignorecase = true,
-    ignorespaces = true
+        var queryOptions = new AnagramDetectorQueryOptions {
+    Text1 = "listen",
+    Text2 = "silent",
+    Ignorecase = true,
+    Ignorespaces = true
 };
 
         var response = await apiClient.ExecuteAsync(queryOptions);
@@ -154,7 +154,7 @@ If you need to use synchronous code, you can use the `Execute` method:
 
 ```csharp
 using System;
-using APIVerve;
+using APIVerve.API.AnagramDetector;
 
 public class Example
 {
@@ -162,11 +162,11 @@ public class Example
     {
         var apiClient = new AnagramDetectorAPIClient("[YOUR_API_KEY]");
 
-        var queryOptions = new QueryOptions {
-    text1 = "listen",
-    text2 = "silent",
-    ignorecase = true,
-    ignorespaces = true
+        var queryOptions = new AnagramDetectorQueryOptions {
+    Text1 = "listen",
+    Text2 = "silent",
+    Ignorecase = true,
+    Ignorespaces = true
 };
 
         var response = apiClient.Execute(queryOptions);
@@ -194,7 +194,7 @@ The API client provides comprehensive error handling. Here are some examples:
 ```csharp
 using System;
 using System.Threading.Tasks;
-using APIVerve;
+using APIVerve.API.AnagramDetector;
 
 public class Example
 {
@@ -202,11 +202,11 @@ public class Example
     {
         var apiClient = new AnagramDetectorAPIClient("[YOUR_API_KEY]");
 
-        var queryOptions = new QueryOptions {
-    text1 = "listen",
-    text2 = "silent",
-    ignorecase = true,
-    ignorespaces = true
+        var queryOptions = new AnagramDetectorQueryOptions {
+    Text1 = "listen",
+    Text2 = "silent",
+    Ignorecase = true,
+    Ignorespaces = true
 };
 
         try
@@ -249,7 +249,7 @@ public class Example
 ```csharp
 using System;
 using System.Threading.Tasks;
-using APIVerve;
+using APIVerve.API.AnagramDetector;
 
 public class Example
 {
@@ -261,11 +261,11 @@ public class Example
         apiClient.SetMaxRetries(3);        // Retry up to 3 times (default: 0, max: 3)
         apiClient.SetRetryDelay(2000);     // Wait 2 seconds between retries
 
-        var queryOptions = new QueryOptions {
-    text1 = "listen",
-    text2 = "silent",
-    ignorecase = true,
-    ignorespaces = true
+        var queryOptions = new AnagramDetectorQueryOptions {
+    Text1 = "listen",
+    Text2 = "silent",
+    Ignorecase = true,
+    Ignorespaces = true
 };
 
         try
@@ -305,11 +305,11 @@ var apiClient = new AnagramDetectorAPIClient("[YOUR_API_KEY]");
 apiClient.AddCustomHeader("X-Custom-Header", "custom-value");
 apiClient.AddCustomHeader("X-Request-ID", Guid.NewGuid().ToString());
 
-var queryOptions = new QueryOptions {
-    text1 = "listen",
-    text2 = "silent",
-    ignorecase = true,
-    ignorespaces = true
+var queryOptions = new AnagramDetectorQueryOptions {
+    Text1 = "listen",
+    Text2 = "silent",
+    Ignorecase = true,
+    Ignorespaces = true
 };
 
 var response = await apiClient.ExecuteAsync(queryOptions);
@@ -334,11 +334,11 @@ apiClient.SetLogger(message =>
     Console.WriteLine($"[LOG] {DateTime.Now:yyyy-MM-dd HH:mm:ss} - {message}");
 });
 
-var queryOptions = new QueryOptions {
-    text1 = "listen",
-    text2 = "silent",
-    ignorecase = true,
-    ignorespaces = true
+var queryOptions = new AnagramDetectorQueryOptions {
+    Text1 = "listen",
+    Text2 = "silent",
+    Ignorecase = true,
+    Ignorespaces = true
 };
 
 var response = await apiClient.ExecuteAsync(queryOptions);
@@ -355,11 +355,11 @@ var apiClient = new AnagramDetectorAPIClient("[YOUR_API_KEY]");
 apiClient.SetMaxRetries(3);           // Retry up to 3 times (default: 0, max: 3)
 apiClient.SetRetryDelay(1500);        // Wait 1.5 seconds between retries (default: 1000ms)
 
-var queryOptions = new QueryOptions {
-    text1 = "listen",
-    text2 = "silent",
-    ignorecase = true,
-    ignorespaces = true
+var queryOptions = new AnagramDetectorQueryOptions {
+    Text1 = "listen",
+    Text2 = "silent",
+    Ignorecase = true,
+    Ignorespaces = true
 };
 
 var response = await apiClient.ExecuteAsync(queryOptions);
@@ -370,11 +370,11 @@ var response = await apiClient.ExecuteAsync(queryOptions);
 The API client implements `IDisposable` for proper resource cleanup:
 
 ```csharp
-var queryOptions = new QueryOptions {
-    text1 = "listen",
-    text2 = "silent",
-    ignorecase = true,
-    ignorespaces = true
+var queryOptions = new AnagramDetectorQueryOptions {
+    Text1 = "listen",
+    Text2 = "silent",
+    Ignorecase = true,
+    Ignorespaces = true
 };
 
 using (var apiClient = new AnagramDetectorAPIClient("[YOUR_API_KEY]"))
@@ -403,37 +403,7 @@ using (var apiClient = new AnagramDetectorAPIClient("[YOUR_API_KEY]"))
     "sorted_text2": "eilnst",
     "length_text1": 6,
     "length_text2": 6,
-    "character_frequency_text1": {
-      "l": 1,
-      "i": 1,
-      "s": 1,
-      "t": 1,
-      "e": 1,
-      "n": 1
-    },
-    "character_frequency_text2": {
-      "s": 1,
-      "i": 1,
-      "l": 1,
-      "e": 1,
-      "n": 1,
-      "t": 1
-    },
-    "common_characters": {
-      "l": 1,
-      "i": 1,
-      "s": 1,
-      "t": 1,
-      "e": 1,
-      "n": 1
-    },
-    "unique_to_text1": {},
-    "unique_to_text2": {},
-    "similarity_percentage": 100,
-    "options": {
-      "ignore_case": true,
-      "ignore_spaces": true
-    }
+    "similarity_percentage": 100
   }
 }
 ```
