@@ -194,11 +194,37 @@ x-api-key: YOUR_API_KEY_HERE
 Get your API key: [https://apiverve.com](https://apiverve.com)
 
 ### Response Format
-All responses are JSON with this structure:
+
+Every APIVerve endpoint returns the same envelope — check `status`, then read `data`:
+
 ```json
 {
   "status": "ok",
+  "error": null,
   "data": { ... }
+}
+```
+
+### Example Response
+
+A real response from the Anagram Detector API:
+
+```json
+{
+  "status": "ok",
+  "error": null,
+  "data": {
+    "text1": "listen",
+    "text2": "silent",
+    "is_anagram": true,
+    "cleaned_text1": "listen",
+    "cleaned_text2": "silent",
+    "sorted_text1": "eilnst",
+    "sorted_text2": "eilnst",
+    "length_text1": 6,
+    "length_text2": 6,
+    "similarity_percentage": 100
+  }
 }
 ```
 
