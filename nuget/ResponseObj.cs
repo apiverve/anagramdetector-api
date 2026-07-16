@@ -25,6 +25,9 @@ namespace APIVerve.API.AnagramDetector
 
         [JsonProperty("data")]
         public Data Data { get; set; }
+
+        [JsonProperty("premium")]
+        public Premium Premium { get; set; }
     }
 
     public partial class Data
@@ -36,7 +39,7 @@ namespace APIVerve.API.AnagramDetector
         public string Text2 { get; set; }
 
         [JsonProperty("is_anagram")]
-        public bool IsAnagram { get; set; }
+        public bool? IsAnagram { get; set; }
 
         [JsonProperty("cleaned_text1")]
         public string CleanedText1 { get; set; }
@@ -51,64 +54,24 @@ namespace APIVerve.API.AnagramDetector
         public string SortedText2 { get; set; }
 
         [JsonProperty("length_text1")]
-        public long LengthText1 { get; set; }
+        public long? LengthText1 { get; set; }
 
         [JsonProperty("length_text2")]
-        public long LengthText2 { get; set; }
-
-        [JsonProperty("character_frequency_text1")]
-        public CharacterFrequencyText1 CharacterFrequencyText1 { get; set; }
-
-        [JsonProperty("character_frequency_text2")]
-        public CharacterFrequencyText1 CharacterFrequencyText2 { get; set; }
-
-        [JsonProperty("common_characters")]
-        public CharacterFrequencyText1 CommonCharacters { get; set; }
-
-        [JsonProperty("unique_to_text1")]
-        public UniqueToText UniqueToText1 { get; set; }
-
-        [JsonProperty("unique_to_text2")]
-        public UniqueToText UniqueToText2 { get; set; }
+        public long? LengthText2 { get; set; }
 
         [JsonProperty("similarity_percentage")]
-        public long SimilarityPercentage { get; set; }
-
-        [JsonProperty("options")]
-        public Options Options { get; set; }
+        public long? SimilarityPercentage { get; set; }
     }
 
-    public partial class CharacterFrequencyText1
+    public partial class Premium
     {
-        [JsonProperty("l")]
-        public long L { get; set; }
+        [JsonProperty("message")]
+        public string Message { get; set; }
 
-        [JsonProperty("i")]
-        public long I { get; set; }
+        [JsonProperty("upgrade_url")]
+        public Uri UpgradeUrl { get; set; }
 
-        [JsonProperty("s")]
-        public long S { get; set; }
-
-        [JsonProperty("t")]
-        public long T { get; set; }
-
-        [JsonProperty("e")]
-        public long E { get; set; }
-
-        [JsonProperty("n")]
-        public long N { get; set; }
-    }
-
-    public partial class Options
-    {
-        [JsonProperty("ignore_case")]
-        public bool IgnoreCase { get; set; }
-
-        [JsonProperty("ignore_spaces")]
-        public bool IgnoreSpaces { get; set; }
-    }
-
-    public partial class UniqueToText
-    {
+        [JsonProperty("locked_fields")]
+        public string[] LockedFields { get; set; }
     }
 }
