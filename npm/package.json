@@ -1,7 +1,7 @@
 {
   "name": "@apiverve/anagramdetector",
-  "version": "1.2.0",
-  "description": "Anagram Detector is a tool for checking if two words or phrases are anagrams of each other. It provides character frequency analysis and similarity scoring.",
+  "version": "1.2.2",
+  "description": "Anagram Detector checks whether two words or phrases are anagrams of each other. Submit two strings to receive a true or false match verdict, cleaned comparison text, and character counts with options to ignore letter case and spaces.",
   "main": "index.js",
   "types": "index.d.ts",
   "sideEffects": false,
@@ -34,7 +34,7 @@
   "bugs": {
     "url": "https://github.com/apiverve/anagramdetector-api/issues"
   },
-  "homepage": "https://apiverve.com/marketplace/anagramdetector?utm_source=npm&utm_medium=homepage",
+  "homepage": "https://apiverve.com/marketplace/anagramdetector?utm_source=npm&utm_medium=referral&utm_content=homepage",
   "devDependencies": {
     "mocha": "^11.0.1",
     "chai": "^5.1.2",
