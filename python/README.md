@@ -1,13 +1,12 @@
 Anagram Detector API
 ============
 
-Anagram Detector is a tool for checking if two words or phrases are anagrams of each other. It provides character frequency analysis and similarity scoring.
+Anagram Detector checks whether two words or phrases are anagrams of each other. Submit two strings to receive a true or false match verdict, cleaned comparison text, and character counts with options to ignore letter case and spaces.
 
-![Build Status](https://img.shields.io/badge/build-passing-green)
-![Code Climate](https://img.shields.io/badge/maintainability-B-purple)
-![Prod Ready](https://img.shields.io/badge/production-ready-blue)
 
-This is a Python API Wrapper for the [Anagram Detector API](https://apiverve.com/marketplace/anagramdetector?utm_source=pypi&utm_medium=readme)
+[![PyPI version](https://img.shields.io/pypi/v/apiverve-anagramdetector.svg)](https://pypi.org/project/apiverve-anagramdetector/)
+
+This is a Python wrapper for the [Anagram Detector API](https://apiverve.com/marketplace/anagramdetector?utm_source=pypi&utm_medium=referral&utm_content=readme)
 
 ---
 
@@ -29,8 +28,8 @@ pip3 install apiverve-anagramdetector
 
 ## Configuration
 
-Before using the anagramdetector API client, you have to setup your account and obtain your API Key.
-You can get it by signing up at [https://apiverve.com](https://apiverve.com?utm_source=pypi&utm_medium=readme)
+Before using the Anagram Detector API client, you have to setup your account and obtain your API Key.
+You can get it by signing up at [https://apiverve.com](https://apiverve.com?utm_source=pypi&utm_medium=referral&utm_content=readme)
 
 ---
 
@@ -65,7 +64,7 @@ except Exception as e:
 
 ## Usage
 
-The Anagram Detector API documentation is found here: [https://docs.apiverve.com/ref/anagramdetector](https://docs.apiverve.com/ref/anagramdetector?utm_source=pypi&utm_medium=readme).
+The Anagram Detector API documentation is found here: [https://docs.apiverve.com/ref/anagramdetector](https://docs.apiverve.com/ref/anagramdetector?utm_source=pypi&utm_medium=referral&utm_content=readme).
 You can find parameters, example responses, and status codes documented here.
 
 ### Setup
@@ -121,37 +120,7 @@ print(result)
     "sorted_text2": "eilnst",
     "length_text1": 6,
     "length_text2": 6,
-    "character_frequency_text1": {
-      "l": 1,
-      "i": 1,
-      "s": 1,
-      "t": 1,
-      "e": 1,
-      "n": 1
-    },
-    "character_frequency_text2": {
-      "s": 1,
-      "i": 1,
-      "l": 1,
-      "e": 1,
-      "n": 1,
-      "t": 1
-    },
-    "common_characters": {
-      "l": 1,
-      "i": 1,
-      "s": 1,
-      "t": 1,
-      "e": 1,
-      "n": 1
-    },
-    "unique_to_text1": {},
-    "unique_to_text2": {},
-    "similarity_percentage": 100,
-    "options": {
-      "ignore_case": true,
-      "ignore_spaces": true
-    }
+    "similarity_percentage": 100
   }
 }
 ```
@@ -304,7 +273,7 @@ finally:
 
 ## Customer Support
 
-Need any assistance? [Get in touch with Customer Support](https://apiverve.com/contact?utm_source=pypi&utm_medium=readme).
+Need any assistance? [Get in touch with Customer Support](https://apiverve.com/contact?utm_source=pypi&utm_medium=referral&utm_content=readme).
 
 ---
 
@@ -315,12 +284,12 @@ Stay up to date by following [@apiverveHQ](https://twitter.com/apiverveHQ) on Tw
 
 ## Legal
 
-All usage of the APIVerve website, API, and services is subject to the [APIVerve Terms of Service](https://apiverve.com/terms?utm_source=pypi&utm_medium=readme) and all legal documents and agreements.
+All usage of the APIVerve website, API, and services is subject to the [APIVerve Terms of Service](https://apiverve.com/terms?utm_source=pypi&utm_medium=referral&utm_content=readme) and all legal documents and agreements.
 
 ---
 
 ## License
-Licensed under the The MIT License (MIT)
+Licensed under the MIT License (MIT)
 
 Copyright (&copy;) 2026 APIVerve, and EvlarSoft LLC
 
