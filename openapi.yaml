@@ -2,9 +2,10 @@ openapi: 3.0.4
 info:
   title: Anagram Detector
   description: >-
-    Anagram Detector is a tool for checking if two words or phrases are anagrams
-    of each other. It provides character frequency analysis and similarity
-    scoring.
+    Anagram Detector checks whether two words or phrases are anagrams of each
+    other. Submit two strings to receive a true or false match verdict, cleaned
+    comparison text, and character counts with options to ignore letter case and
+    spaces.
   termsOfService: https://apiverve.com/terms/
   contact:
     name: APIVerve Support
@@ -19,7 +20,7 @@ servers:
 paths:
   /v1/anagramdetector:
     get:
-      summary: Detect Anagram
+      summary: Anagram Detector
       description: Check if two texts are anagrams with detailed analysis
       operationId: anagramdetector
       parameters:
