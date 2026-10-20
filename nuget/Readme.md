@@ -1,13 +1,12 @@
-AnagramDetector API
+Anagram Detector API
 ============
 
-Anagram Detector is a tool for checking if two words or phrases are anagrams of each other. It provides character frequency analysis and similarity scoring.
+Anagram Detector checks whether two words or phrases are anagrams of each other. Submit two strings to receive a true or false match verdict, cleaned comparison text, and character counts with options to ignore letter case and spaces.
 
-![Build Status](https://img.shields.io/badge/build-passing-green)
-![Code Climate](https://img.shields.io/badge/maintainability-B-purple)
-![Prod Ready](https://img.shields.io/badge/production-ready-blue)
 
-This is a .NET Wrapper for the [AnagramDetector API](https://apiverve.com/marketplace/anagramdetector?utm_source=nuget&utm_medium=readme)
+[![NuGet version](https://img.shields.io/nuget/v/APIVerve.API.AnagramDetector.svg)](https://www.nuget.org/packages/APIVerve.API.AnagramDetector)
+
+This is a .NET wrapper for the [Anagram Detector API](https://apiverve.com/marketplace/anagramdetector?utm_source=nuget&utm_medium=referral&utm_content=readme)
 
 ---
 
@@ -40,8 +39,8 @@ From within Visual Studio:
 
 ## Configuration
 
-Before using the anagramdetector API client, you have to setup your account and obtain your API Key.
-You can get it by signing up at [https://apiverve.com](https://apiverve.com?utm_source=nuget&utm_medium=readme)
+Before using the Anagram Detector API client, you have to setup your account and obtain your API Key.
+You can get it by signing up at [https://apiverve.com](https://apiverve.com?utm_source=nuget&utm_medium=referral&utm_content=readme)
 
 ---
 
@@ -61,11 +60,11 @@ class Program
         var apiClient = new AnagramDetectorAPIClient("[YOUR_API_KEY]");
 
         var queryOptions = new AnagramDetectorQueryOptions {
-    Text1 = "listen",
-    Text2 = "silent",
-    Ignorecase = true,
-    Ignorespaces = true
-};
+            Text1 = "listen",
+            Text2 = "silent",
+            Ignorecase = true,
+            Ignorespaces = true
+        };
 
         // Make the API call
         try
@@ -95,13 +94,13 @@ class Program
 
 ## Usage
 
-The AnagramDetector API documentation is found here: [https://docs.apiverve.com/ref/anagramdetector](https://docs.apiverve.com/ref/anagramdetector?utm_source=nuget&utm_medium=readme).
+The Anagram Detector API documentation is found here: [https://docs.apiverve.com/ref/anagramdetector](https://docs.apiverve.com/ref/anagramdetector?utm_source=nuget&utm_medium=referral&utm_content=readme).
 You can find parameters, example responses, and status codes documented here.
 
 ### Setup
 
 ###### Authentication
-AnagramDetector API uses API Key-based authentication. When you create an instance of the API client, you can pass your API Key as a parameter.
+Anagram Detector API uses API Key-based authentication. When you create an instance of the API client, you can pass your API Key as a parameter.
 
 ```csharp
 // Create an instance of the API client
@@ -128,11 +127,11 @@ public class Example
         var apiClient = new AnagramDetectorAPIClient("[YOUR_API_KEY]");
 
         var queryOptions = new AnagramDetectorQueryOptions {
-    Text1 = "listen",
-    Text2 = "silent",
-    Ignorecase = true,
-    Ignorespaces = true
-};
+            Text1 = "listen",
+            Text2 = "silent",
+            Ignorecase = true,
+            Ignorespaces = true
+        };
 
         var response = await apiClient.ExecuteAsync(queryOptions);
 
@@ -163,11 +162,11 @@ public class Example
         var apiClient = new AnagramDetectorAPIClient("[YOUR_API_KEY]");
 
         var queryOptions = new AnagramDetectorQueryOptions {
-    Text1 = "listen",
-    Text2 = "silent",
-    Ignorecase = true,
-    Ignorespaces = true
-};
+            Text1 = "listen",
+            Text2 = "silent",
+            Ignorecase = true,
+            Ignorespaces = true
+        };
 
         var response = apiClient.Execute(queryOptions);
 
@@ -203,11 +202,11 @@ public class Example
         var apiClient = new AnagramDetectorAPIClient("[YOUR_API_KEY]");
 
         var queryOptions = new AnagramDetectorQueryOptions {
-    Text1 = "listen",
-    Text2 = "silent",
-    Ignorecase = true,
-    Ignorespaces = true
-};
+            Text1 = "listen",
+            Text2 = "silent",
+            Ignorecase = true,
+            Ignorespaces = true
+        };
 
         try
         {
@@ -262,11 +261,11 @@ public class Example
         apiClient.SetRetryDelay(2000);     // Wait 2 seconds between retries
 
         var queryOptions = new AnagramDetectorQueryOptions {
-    Text1 = "listen",
-    Text2 = "silent",
-    Ignorecase = true,
-    Ignorespaces = true
-};
+            Text1 = "listen",
+            Text2 = "silent",
+            Ignorecase = true,
+            Ignorespaces = true
+        };
 
         try
         {
@@ -412,7 +411,7 @@ using (var apiClient = new AnagramDetectorAPIClient("[YOUR_API_KEY]"))
 
 ## Customer Support
 
-Need any assistance? [Get in touch with Customer Support](https://apiverve.com/contact?utm_source=nuget&utm_medium=readme).
+Need any assistance? [Get in touch with Customer Support](https://apiverve.com/contact?utm_source=nuget&utm_medium=referral&utm_content=readme).
 
 ---
 
@@ -423,12 +422,12 @@ Stay up to date by following [@apiverveHQ](https://twitter.com/apiverveHQ) on Tw
 
 ## Legal
 
-All usage of the APIVerve website, API, and services is subject to the [APIVerve Terms of Service](https://apiverve.com/terms?utm_source=nuget&utm_medium=readme) and all legal documents and agreements.
+All usage of the APIVerve website, API, and services is subject to the [APIVerve Terms of Service](https://apiverve.com/terms?utm_source=nuget&utm_medium=referral&utm_content=readme) and all legal documents and agreements.
 
 ---
 
 ## License
-Licensed under the The MIT License (MIT)
+Licensed under the MIT License (MIT)
 
 Copyright (&copy;) 2026 APIVerve, and EvlarSoft LLC
 
