@@ -1,6 +1,6 @@
 # Anagram Detector API - PHP Package
 
-Anagram Detector is a tool for checking if two words or phrases are anagrams of each other. It provides character frequency analysis and similarity scoring.
+Anagram Detector checks whether two words or phrases are anagrams of each other. Submit two strings to receive a true or false match verdict, cleaned comparison text, and character counts with options to ignore letter case and spaces.
 
 ## Installation
 
@@ -95,11 +95,11 @@ $client = new Client(
 
 ## Documentation
 
-For more information, visit the [API Documentation](https://docs.apiverve.com/ref/anagramdetector?utm_source=packagist&utm_medium=readme).
+For more information, visit the [API Documentation](https://docs.apiverve.com/ref/anagramdetector?utm_source=packagist&utm_medium=referral&utm_content=readme).
 
 ## Support
 
-- Website: [https://apiverve.com/marketplace/anagramdetector?utm_source=php&utm_medium=readme](https://apiverve.com/marketplace/anagramdetector?utm_source=php&utm_medium=readme)
+- Website: [https://apiverve.com/marketplace/anagramdetector?utm_source=php&utm_medium=referral&utm_content=readme](https://apiverve.com/marketplace/anagramdetector?utm_source=php&utm_medium=referral&utm_content=readme)
 - Email: hello@apiverve.com
 
 ## License
