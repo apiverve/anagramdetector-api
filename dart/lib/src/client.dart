@@ -46,7 +46,7 @@ final _formatPatterns = {
 
 /// Anagram Detector API client.
 ///
-/// For more information, visit: https://apiverve.com/marketplace/anagramdetector?utm_source=dart&utm_medium=readme
+/// For more information, visit: https://apiverve.com/marketplace/anagramdetector?utm_source=dart&utm_medium=referral&utm_content=readme
 ///
 /// Parameters:
 /// * [text1] (required) - The first text to compare
