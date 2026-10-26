@@ -1,6 +1,6 @@
 {
   "name": "@apiverve/anagramdetector",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Anagram Detector checks whether two words or phrases are anagrams of each other. Submit two strings to receive a true or false match verdict, cleaned comparison text, and character counts with options to ignore letter case and spaces.",
   "main": "index.js",
   "types": "index.d.ts",
